@@ -28,6 +28,20 @@ body{
   padding-right: 30px;
 }
 
+#btnAudio{
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+  background: red;
+  border: 5px solid #151731;
+  box-shadow: 0 0 0 5px white;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 50px;
+}
+
 footer{
   position: fixed;
   bottom: 0;
