@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url('../assets/background.png');
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.logo{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.button-start{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background: red;
+  border: 5px solid #151731;
+  box-shadow: 0 0 0 5px white;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color:  #151731;
+  font-size: 25px;
+}
