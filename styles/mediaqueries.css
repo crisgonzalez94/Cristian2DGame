@@ -1,0 +1,13 @@
+body{
+  width: 100%;
+}
+
+#unity-canvas{
+  width: 100%;
+}
+
+
+/*Small movile*/
+@media screen and (max-width: 480px) {
+  
+}
