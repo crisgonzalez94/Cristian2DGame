@@ -1,4 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background: url('../assets/background.png');
+}
+
+.logo{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+footer{
+  position: fixed;
+  bottom: 100px;
+  width: 100%;
+  color:  #151731;
+  font-size: 25px;
+}
+
 /*Container del juego estara escondido hasta que el juego se cargue en el evento*/
 #unity-container{
   opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#game-loading{
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  
+  font-family: 'Montserrat', sans-serif;
 }

@@ -11,16 +11,28 @@
     <link rel="stylesheet" href="TemplateData/style.css">
 
     
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/game-loading.css">
+
+    
 
   </head>
   <body>
     
     <!--Imagen de carga-->
-    <div class="game-loading">
+    <div id="game-loading">
 
+      <div class="logo">
+        <img src="./assets/logo.png" alt="">
+      </div>
+      
+    
       <footer>
-        <h1>Loading....</h1>
+        <h5>Loading...</h5>
       </footer>
 
     </div>
@@ -43,13 +55,15 @@
 
 
     <script>
-
+      var gameloading = document.getElementById("game-loading");
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
+
+      //Show game loading
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -83,7 +97,7 @@
         codeUrl: buildUrl + "/myproyect.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "My project",
+        productName: "Cristian 2D Game",
         productVersion: "2.1.0",
         showBanner: unityShowBanner,
       };
@@ -125,13 +139,16 @@
             return new Promise( (resolve , reject) => {
               //Reaparecer pantalla del juego
               setTimeout(()=>{
+                console.log('hola')
+                gameloading.style.display = "none";
                 container.style.opacity = "100%";
+                
               },2000);
+
             });
           }
 
           showGame();
-
           
 
           loadingBar.style.display = "none";
