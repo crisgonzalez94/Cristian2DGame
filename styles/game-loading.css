@@ -1,0 +1,4 @@
+/*Container del juego estara escondido hasta que el juego se cargue en el evento*/
+#unity-container{
+  opacity: 0;
+}
